@@ -5,8 +5,8 @@ import "../style/GanttChart.css";
 export default function GanttChart({ ganttChart }) {
   if (!ganttChart || ganttChart.length === 0) return <div></div>;
 
-  const totalTime = Math.max(...ganttChart.map(g => g.end));
-  const scaleFactor = 1000 / totalTime;
+  //const totalTime = Math.max(...ganttChart.map(g => g.end));
+  const scaleFactor = 1000;
 
   return (
     <div className="gantt-container">
